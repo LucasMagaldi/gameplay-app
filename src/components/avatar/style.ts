@@ -9,7 +9,8 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginRight: 22,
-        borderColor: theme.colors.highlight
+        borderColor: theme.colors.highlight,
+        borderWidth: 2
     },
     avatar: {
         width: 46,

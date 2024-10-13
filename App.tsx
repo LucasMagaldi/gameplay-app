@@ -4,10 +4,9 @@ import { Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter'
 import { Rajdhani_700Bold, Rajdhani_500Medium } from '@expo-google-fonts/rajdhani'
 import * as SplashScreen from 'expo-splash-screen';
 
-import { SignIn } from './src/screens/sign-in';
 import { StatusBar } from 'react-native';
-import { Home } from './src/screens/home';
 import { Background } from './src/components/background';
+import { Routes } from './src/routes';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -36,7 +35,7 @@ export default function App() {
         backgroundColor='transparent'
         translucent
       />
-      <Home />
+      <Routes />
     </Background>
   )
 }

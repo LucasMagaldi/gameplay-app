@@ -4,8 +4,14 @@ import { View, Text, Image } from "react-native"
 import IllustrationImg from '../../assets/illustration.png'
 import { styles } from "./styles"
 import { Button } from "../../components/button"
+import { useNavigation } from "@react-navigation/native"
 
 export function SignIn() {
+    const navigation = useNavigation()
+    function handleSignIn() {
+        navigation.navigate('home')
+    }
+
     return (
         <View style={styles.container}>
             <Image 
@@ -29,7 +35,11 @@ export function SignIn() {
                 </Text>
             </View>
 
-            <Button title="Sign-in with Discord" activeOpacity={0.7}/>
+            <Button 
+                title="Sign-in with Discord" 
+                activeOpacity={0.7}
+                onPress={handleSignIn}
+                />
         </View>
     )
 }
