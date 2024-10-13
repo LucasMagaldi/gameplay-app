@@ -7,6 +7,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { SignIn } from './src/screens/sign-in';
 import { StatusBar } from 'react-native';
 import { Home } from './src/screens/home';
+import { Background } from './src/components/background';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -29,13 +30,13 @@ export default function App() {
   }
 
   return (
-    <>
+    <Background>
       <StatusBar 
         barStyle='light-content'
         backgroundColor='transparent'
         translucent
       />
-      <Home />
-    </>
+      <SignIn />
+    </Background>
   )
 }
