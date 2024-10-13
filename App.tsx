@@ -36,7 +36,7 @@ export default function App() {
         backgroundColor='transparent'
         translucent
       />
-      <SignIn />
+      <Home />
     </Background>
   )
 }
