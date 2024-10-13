@@ -3,7 +3,7 @@ import { theme } from "../../global/theme"
 
 export const styles = StyleSheet.create({
     container: {
-        
+        flexDirection: 'row'
     },
     user: {
         flexDirection: 'row'
